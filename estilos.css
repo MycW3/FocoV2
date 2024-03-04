@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+/*Reglas de formato al conetendor de la tapa del interruptor*/
+.switch-contenedor{
+    width: 20%;
+    height: 100vh;
+    display: flex;
+     /*Centra el contenedor en x */
+    justify-content: center;
+    /*Centra el contenedor en y */
+    align-items: center;
+}
+
+/*Reglas para la tapa del interruptor*/
+.switch-tapa{
+    background-color: gray;
+    height: 120px;
+    width: 80px;
+    box-shadow: 0 0 5px darkgray;
+    /*Propiedades flex*/
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Reglas ara dibujar tornillos*/
+.tornillo{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: darkgray;
+}
+
+.switch{
+    width: 50%;
+    height: 50%;
+    background: linear-gradient(darkgray, gray);
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 5px solid darkgray;
+    cursor: pointer;
+}
+
+.on{
+    background: linear-gradient(grey, darkgray);
+    border-top: 5px solid darkgray;
+    border-bottom: 1px solid black;
+}
+
+.foco-contenedor{
+    height: 100vh;
+    width: 40%;
+}
+
+/*Reglas del foco*/
+.cable{
+    height: 200px;
+    width: 10px;
+    background-color: grey;
+    margin: 0 auto;
+}
+
+.cable-conexion{
+    width: 15px;
+    height: 15px;
+    background-color: dimgrey;
+    margin: 0 auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: -3px;
+}
+
+/*Reglas de socket*/
+.socket-arriba{
+    height: 20px;
+    width: 50px;
+    background-color: grey;
+    margin: 0 auto;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: -5px;
+    border-bottom: 1px solid black;
+}
+
+.socket-abajo{
+    width: 50px;
+    height: 30px;
+    background-color: grey;
+    margin: 0 auto;
+}
+
+.socket-fondo{
+    width: 50px;
+    height: 20px;
+    background-color: grey;
+    margin: 0 auto;
+    opacity: 0.5;
+    border-radius: 50%;
+    margin-top: -12px;
+}
+
+/*foco encendido*/
+.foco-arriba{
+    height: 30px;
+    width: 46px;
+    background-color: lightgray;
+    margin: 0 auto;
+    margin-top: -10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.foco-abajo{
+    height: 80px;
+    width: 80px;
+    background-color: lightgray;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-top: -10px;
+}
+
+.focoOn{
+    background-color: lightyellow;
+    box-shadow: 0 10px 100px 10px lightyellow;
+}
